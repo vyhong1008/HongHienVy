@@ -105,5 +105,10 @@ namespace LabBigSchool_HongHienVy
         {
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
         }
+
+        internal Task TwoFactorSignInAsync(object provider, object code, object isPersistent, object rememberBrowser)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
